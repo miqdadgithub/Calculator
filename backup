@@ -1,0 +1,150 @@
+MDBoxLayout:
+    orientation: 'vertical'
+    spacing:2
+
+    # card for screen
+    MDCard:
+        size_hint_y: None
+        height:"90dp"
+        pos_hint: {"center_x": .5, "center_y": .5}
+        elevation:100
+        md_bg_color:1, 1, 1, 1
+        MDLabel:
+            size_hint_y: None
+            height:"90dp"
+            text:"0"
+            text_color:0, 0, 0, 1
+
+    MDGridLayout:
+        spacing:5
+        cols:5
+
+        MDRaisedButton:
+            text:'%'
+            size_hint_x: 0.2
+                            
+        MDRaisedButton:
+            text:'/'
+            size_hint_x: 0.2
+                                                
+        MDRaisedButton:
+            text:'X'
+            size_hint_x: 0.2
+
+        MDRaisedButton:
+            text:'-'
+            size_hint_x: 0.2
+
+        MDRaisedButton:
+            text:'CLEAR'
+            size_hint_x: 0.5            
+                            
+        MDRaisedButton:
+            text:'7'
+            size_hint_x: 0.2
+
+        MDRaisedButton:
+            text:'8'
+            size_hint_x: 0.2
+                                                
+        MDRaisedButton:
+            text:'9'
+            size_hint_x: 0.2
+
+        MDRaisedButton:
+            text:'+'
+            size_hint_x: 0.2
+        MDRaisedButton:
+            text:'AC'
+            size_hint_x: 0.5            
+                            
+        MDRaisedButton:
+            text:'4'
+            size_hint_x: 0.2
+
+        MDRaisedButton:
+            text:'5'
+            size_hint_x: 0.2
+
+                                                
+        MDRaisedButton:
+            text:'6'
+            size_hint_x: 0.2
+        MDRaisedButton:
+            text:'SSS'
+            size_hint_x: 0.2            
+
+        MDRaisedButton:
+            text:'('
+            size_hint_x: 0.5            
+                            
+        MDRaisedButton:
+            text:'1'
+            size_hint_x: 0.2
+
+        MDRaisedButton:
+            text:'2'
+            size_hint_x: 0.2
+                                                
+        MDRaisedButton:
+            text:'3'
+            size_hint_x: 0.2
+
+        MDRaisedButton:
+            text:'='
+            size_hint_x: 0.2        
+    
+        MDRaisedButton:
+            text:')'
+            size_hint_x: 0.5            
+
+        MDRaisedButton:
+            text:'0'
+            size_hint_x: 0.
+        MDRaisedButton:
+            text:'.'
+            size_hint_x: 0.2
+        MDRaisedButton:
+            text:'SSS'
+            size_hint_x: 0.2
+        MDRaisedButton:
+            text:'SSS'
+            size_hint_x: 0.2
+
+        MDRaisedButton:
+            text:'+/-'
+            size_hint_x: 0.5    
+
+
+    canvas.before:
+        Color:
+            rgba: [1, 1, 1, 1]
+    
+        Line:
+            points: [10, 150, 20, 150, 30, 150]
+            width: dp(2)
+    
+
+
+
+    # MDBoxLayout:
+    #     orientation: 'horizontal'
+    #     MDGridLayout:
+    #         spacing:5
+    #         cols:5
+    #         MDRaisedButton:
+    #             text:'CLEAR'
+    #             size_hint_x: 0.5
+    #         MDRaisedButton:
+    #             text:'AC'
+    #             size_hint_x: 0.5
+    #         MDRaisedButton:
+    #             text:'('
+    #             size_hint_x: 0.5
+    #         MDRaisedButton:
+    #             text:')'
+    #             size_hint_x: 0.5
+    #         MDRaisedButton:
+    #             text:'+/-'
+    #             size_hint_x: 0.5    
+

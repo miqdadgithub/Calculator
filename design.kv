@@ -1,0 +1,198 @@
+MDBoxLayout:
+    orientation: 'vertical'
+    spacing:15
+    MDLabel:
+        id:my_label
+        text: '5'
+        font_size:"80dp"
+        halign: "right"
+        theme_text_color: "Custom"
+        text_color: 1, 1, 1, 1
+        font_name:"Lcd.ttf"
+        size_hint_y:  None
+        height: dp(80)
+# baic functions and numbers
+    MDGridLayout:
+        spacing:5
+        cols:7
+
+        MDRaisedButton:
+            id:rad_mod
+            text:'Rad'
+            size_hint_x: 0.2
+            on_release:app.setting(self, 'Rad')
+            md_bg_color:(254/255, 138/255, 113/255,1)
+        MDRaisedButton:
+            id:deg_mod
+            text:'Deg'
+            size_hint_x: 0.2
+            on_release:app.setting(self, 'Deg')
+            md_bg_color: (123/255, 192/255, 67/255,1)
+
+        MDRaisedButton:
+            text:'x!'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, 'x!')
+            md_bg_color:(77/255, 100/255, 141/255,1)
+        MDRaisedButton:
+            text:'('
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, '(')
+            md_bg_color:(69/255, 30/255, 62/255.1)
+        MDRaisedButton:
+            text:')'
+            size_hint_x: 0.5            
+            on_release:app.display_fun(self, ')') 
+            md_bg_color:(69/255, 30/255, 62/255.1)                           
+        MDRaisedButton:
+            text:'%'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, '%')
+            md_bg_color:(69/255, 30/255, 62/255.1)
+        MDRaisedButton:
+            text:'CLEAR'
+            size_hint_x: 0.2
+            on_release:app.clear()                                    
+            md_bg_color:(214/255, 45/255, 32/255,1)
+        MDRaisedButton:
+            text:'Inv'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, 'Inv')
+            md_bg_color:(77/255, 100/255, 141/255,1)
+        MDRaisedButton:
+            text:'sin'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, 'sin')
+            md_bg_color:(77/255, 100/255, 141/255,1)
+        MDRaisedButton:
+            text:'ln'
+            size_hint_x: 0.5            
+            on_release:app.display_fun(self, 'ln')
+            md_bg_color:(77/255, 100/255, 141/255,1)
+        MDRaisedButton:
+            text:'7'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, '7')
+            md_bg_color: (230/255, 230/255, 234/255,1)
+        MDRaisedButton:
+            text:'8'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, '8')                                            
+            md_bg_color: (42/255, 183/255, 202/255,1)
+        MDRaisedButton:
+            text:'9'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, '9')
+            md_bg_color: (42/255, 183/255, 202/255,1)
+        MDRaisedButton:
+            text:'÷'
+            size_hint_x: 0.2            
+            on_release:app.display_fun(self, '÷')
+            md_bg_color:(69/255, 30/255, 62/255.1)
+        MDRaisedButton:
+            text: 'π'
+            size_hint_x: 0.5            
+            on_release:app.display_fun(self, 'π')
+            md_bg_color:(0, 135/255, 68/255,1)
+        MDRaisedButton:
+            text:'cos'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, 'cos')
+            md_bg_color:(77/255, 100/255, 141/255,1)
+        MDRaisedButton:
+            text:'log'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, 'log') 
+            md_bg_color:(77/255, 100/255, 141/255,1)                                               
+        MDRaisedButton:
+            text:'4'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, '4')
+            md_bg_color: (42/255, 183/255, 202/255,1)
+        MDRaisedButton:
+            text:'5'
+            size_hint_x: 0.2        
+            on_release:app.display_fun(self, '5')
+            md_bg_color: (42/255, 183/255, 202/255,1)
+        MDRaisedButton:
+            text:'6'
+            size_hint_x: 0.5            
+            on_release:app.display_fun(self, '6')
+            md_bg_color: (42/255, 183/255, 202/255,1)
+        MDRaisedButton:
+            text:'x'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, 'x')
+            md_bg_color:(69/255, 30/255, 62/255.1)
+        MDRaisedButton:
+            text:'e'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, 'e')
+            md_bg_color:(0, 135/255, 68/255,1)
+        MDRaisedButton:
+            text:'tan'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, 'tan')
+            md_bg_color:(77/255, 100/255, 141/255,1)
+        MDRaisedButton:
+            text:'√'
+            size_hint_x: 0.2
+            on_release:app.display_fun(self, '√')
+            md_bg_color:(77/255, 100/255, 141/255,1)
+        MDRaisedButton:
+            text:'1'
+            size_hint_x: 0.5    
+            on_release:app.display_fun(self, '1')
+            md_bg_color: (42/255, 183/255, 202/255,1)
+        MDRaisedButton:
+            text:'2'
+            size_hint_x: 0.5
+            on_release:app.display_fun(self, '2')
+            md_bg_color: (42/255, 183/255, 202/255,1)
+        MDRaisedButton:
+            text:'3'
+            size_hint_x: 0.5
+            on_release:app.display_fun(self, '3')
+            md_bg_color: (42/255, 183/255, 202/255,1)
+        MDRaisedButton:
+            text:'-'
+            size_hint_x: 0.5
+            on_release:app.display_fun(self, '-')
+            md_bg_color:(69/255, 30/255, 62/255.1)
+        MDRaisedButton:
+            text:'Ans'
+            size_hint_x: 0.5
+            on_release:app.show_answer()
+            md_bg_color:(243/255, 119/255, 54/255,1)
+        MDRaisedButton:
+            text:'EXP'
+            size_hint_x: 0.5    
+            on_release:app.display_fun(self, 'Exp')
+            md_bg_color:(243/255, 119/255, 54/255,1)
+        MDRaisedButton:
+            text:'^'
+            size_hint_x: 0.5    
+            on_release:app.display_fun(self, '^')
+            md_bg_color:(77/255, 100/255, 141/255,1)
+        MDRaisedButton:
+            text:'0'
+            size_hint_x: 0.5
+            on_release:app.display_fun(self, '0')
+            md_bg_color: (42/255, 183/255, 202/255,1)
+        MDRaisedButton:
+            text:'.'
+            size_hint_x: 0.5
+            md_bg_color: (42/255, 183/255, 202/255,1)
+            on_release:app.display_fun(self, '.')
+        MDRaisedButton:
+            text:'='
+            size_hint_x: 0.5
+            md_bg_color:(14/255, 154/255, 167/255,1)
+            on_release:app.equals()
+            md_bg_color:(255/255, 167/255, 0,1)
+        MDRaisedButton:
+            text:'+'
+            size_hint_x: 0.5
+            on_release:app.display_fun(self, '+')
+            md_bg_color:(69/255, 30/255, 62/255.1)
+
